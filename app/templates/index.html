@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block main %}
+        <h1>welcome to all our customers in our online shop </h1> 
+        <p>today we want to teach you somethings</p>
+        <p>if you want to sign up to our web click on sign up please !</p>
+        <p>after that you will be able to sign in :D</p>
+        <p>but if you want to search a user , put his name in search bar please!</p>
+        <p>
+            In our shop we have a list of products , if you like to see the list you can type in the web link bar and type next to the line /products_list .<p></p>
+            after you see all the products you can see the product you want and its information by typing next to the we link /product/product_name
+            <p></p>
+            
+        </p>
+        <form action="" method="post">
+            {{ query_form.hidden_tag() }}
+            <p>Search a user: {{ query_form.query() }} {{ query_form.submit() }}</p>
+        </form>
+{% endblock %}
